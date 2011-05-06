@@ -1,0 +1,36 @@
+ X10 transmission library for Arduino version 0.4
+ 
+Copyright (c) 2007 by Tom Igoe (tom.igoe@gmail.com)
+
+This file is free software; you can redistribute it and/or modify
+it under the terms of either the GNU General Public License version 2
+or the GNU Lesser General Public License version 2.1, both as
+published by the Free Software Foundation.
+
+
+This is a new version of the X10 library for Arduino that I wrote originally in 
+2007 for  my book "Making Things Talk".  It's been refactored with a new API,
+based on the Wire library API for Arduino 1.0, which David Mellis recently refactored.
+It inherits from the Stream class so that it can use the write() and read() methods
+from that class.
+
+I haven't yet added read functionality, but if anyone wants to add that and send me
+a pull request I'd be happy to see it.
+
+To use it, you must be using the new-extension branch of the current Arduino repository,
+which can be found here: https://github.com/arduino/Arduino/tree/new-extension
+That repo should become Arduino 1.0 by June or July 2011.
+
+More on X10 and the previous documentation here:  
+http://www.arduino.cc/en/Tutorial/x10
+
+  
+  Original library								(0.1) 
+  Timing bug fixes								(0.2)
+  #include bug fixes for 0012					(0.3)
+  Refactored version following Wire lib API		(0.4)
+  
+Enjoy.
+
+Tom Igoe
+
