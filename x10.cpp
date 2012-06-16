@@ -80,18 +80,18 @@ void x10Class::endTransmission(void)
 }
 
     
-void x10Class::write(uint8_t data)
+size_t x10Class::write(uint8_t data)
 {
 	if (transmitting) {
 		sendCommand(houseCode, data);
 	}
 }
-void x10Class::write(const char * data)
+size_t x10Class::write(const char * data)
 {
  write((uint8_t*)data, strlen(data));
 }
 
-void x10Class::write(const uint8_t *data, size_t quantity)
+size_t x10Class::write(const uint8_t *data, size_t quantity)
 {
     for(size_t i = 0; i < quantity; ++i){
       write(data[i]);

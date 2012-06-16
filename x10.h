@@ -40,9 +40,9 @@ class x10Class : public Stream
     void endTransmission(void);
    // uint8_t requestFrom(uint8_t, uint8_t);	
    // uint8_t requestFrom(int, int);
-    virtual void write(uint8_t data);
-    virtual void write(const char *data);
-    virtual void write(const uint8_t *, size_t);
+    virtual size_t write(uint8_t data);
+    virtual size_t write(const char *data);
+    virtual size_t write(const uint8_t *, size_t);
     
     // the following are not implemented yet:
     virtual int available(void);
