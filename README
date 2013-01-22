@@ -22,6 +22,10 @@ To use it, you must be using Arduino 1.0 or later.
 More on X10 and the previous documentation here:  
 http://www.arduino.cc/en/Tutorial/x10
 
+NOTE: I have no plans to develop this library further at this time. If you're looking for
+further developments, check out Doug Clinton's fork of creatrope's version, at
+https://github.com/DougC/arduino-x10
+
   
   Original library								(0.1) 
   Timing bug fixes								(0.2)
